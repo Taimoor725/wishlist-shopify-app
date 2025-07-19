@@ -1,0 +1,17 @@
+.form-outer{
+    width: 50vw;
+    /* background-color: red; */
+    height: auto;
+}
+
+.btn-format{
+    width: 100%;
+    display: flex;
+    direction: row;
+    justify-content: end;
+}
+
+.btn {
+  font-size: 18px;
+  padding: 12px 24px;
+}
