@@ -16,7 +16,9 @@
     "shopify": "shopify",
     "prisma": "prisma",
     "graphql-codegen": "graphql-codegen",
-    "vite": "vite"
+    "vite": "vite",
+    "login":"shopify login",
+    "ext":"shopify app generate extension"
   },
   "type": "module",
   "engines": {

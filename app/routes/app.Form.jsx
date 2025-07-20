@@ -3,12 +3,39 @@ import "../styles/form.css"
 import { useState } from "react"
 import { Form, useActionData } from "@remix-run/react"
 import { json } from "@remix-run/node"
+import db from "../db.server"
+import { updateLanguageServiceSourceFile } from "typescript"
 
 
+
+// export async function loader() {
+//     let data = await db.Settings.findFirst()
+//     console.log("data-------->",data)
+//     return json(data)
+// }
 
 export async function action({request}) {
+  
       let data=await request.formData()
       data= Object.fromEntries(data)
+      await db.Settings.upsert({
+        where:{id:"1"},
+        update:{
+          id:"1",
+          name:data.name,
+          email:data.email,
+          phone:data.phone,
+          adress:data.adress
+        },
+         create:{
+          id:"1",
+          name:data.name,
+          email:data.email,
+          phone:data.phone,
+          adress:data.adress
+        }
+
+      })
       console.log(data)
       return json(data)
   }

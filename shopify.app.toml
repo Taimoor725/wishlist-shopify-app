@@ -3,7 +3,7 @@
 client_id = "783817f658a30aac587e9d02442aa686"
 name = "whishlist"
 handle = "whishlist-25"
-application_url = "https://judgment-minnesota-electron-broker.trycloudflare.com"
+application_url = "https://hughes-history-ag-leaf.trycloudflare.com"
 embedded = true
 
 [build]
@@ -26,7 +26,7 @@ api_version = "2025-07"
 scopes = "write_products"
 
 [auth]
-redirect_urls = ["https://judgment-minnesota-electron-broker.trycloudflare.com/auth/callback", "https://judgment-minnesota-electron-broker.trycloudflare.com/auth/shopify/callback", "https://judgment-minnesota-electron-broker.trycloudflare.com/api/auth/callback"]
+redirect_urls = ["https://hughes-history-ag-leaf.trycloudflare.com/auth/callback", "https://hughes-history-ag-leaf.trycloudflare.com/auth/shopify/callback", "https://hughes-history-ag-leaf.trycloudflare.com/api/auth/callback"]
 
 [pos]
 embedded = false
